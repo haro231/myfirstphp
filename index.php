@@ -12,6 +12,8 @@
     echo htmlspecialchars($_SERVER [PHP_SELF]);?>">
     Name: <input type = "text" name = "name">
     Age: <input type = "number" age = "age">
+    <input type = "submit" name = "submit" value=" Submit">
+
 </form>
 
 
