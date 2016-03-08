@@ -8,7 +8,10 @@
 <?php
 // define variables and set to empty values
 $name = $age = "";
+$name = $_POST['name'];
+$age = $_POST['age'];
 
+/*
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     $age = test_input($_POST["age"]);
@@ -20,6 +23,7 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+*/
 ?>
 <h2>
     SPECS, MUGS & SAUSAGES
