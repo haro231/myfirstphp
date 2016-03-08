@@ -56,7 +56,7 @@ elseif($age >= 18 && $age < 21 ) {
 elseif ($age >= 16 && $age < 18) {
     print "You can buy only specs";
 }
-elseif ($age > 0 && $age < 16 ){
+elseif ($age <= 0 && $age < 16 ){
     print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
 }
 
