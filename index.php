@@ -42,9 +42,9 @@ $age = $_POST['age'];
 
 
 echo "<h2>Your Input: </h2>";
-echo $name;
+echo "Name" .$name;
 echo "<br>";
-echo $age;
+echo "Age: " .$age;
 echo "<br>";
 
 if ($age >= 21){
