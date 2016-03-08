@@ -30,17 +30,19 @@ function test_input($data) {
     Age: <input type = "number" age = "age">
     <input type = "submit" name = "submit" value=" Submit">
 </form>
+
+
 <?php
-if (Age >= 21){
+if ($age >= 21){
     print "You can buy specs, mugs & sausages";
 }
-elseif(Age >= 18) {
+elseif($age >= 18) {
     print "You can buy specs & mugs";
 }
-elseif (Age >= 16) {
+elseif ($age >= 16) {
     print "You can buy only specs";
     }
-elseif (Age > 0 && Age < 16 ){
+elseif ($age > 0 && $age < 16 ){
     print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
 }
 
