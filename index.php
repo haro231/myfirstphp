@@ -40,7 +40,7 @@ elseif(Age >= 18) {
 elseif (Age >= 16) {
     print "You can buy only specs";
     }
-elseif (Age < 16){
+elseif (Age > 0 && Age < 16 ){
     print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
 }
 
