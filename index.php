@@ -5,6 +5,22 @@
     <title>PHP</title>
 </head>
 <body>
+<?php
+// define variables and set to empty values
+$name = $age = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = test_input($_POST["name"]);
+    $age = test_input($_POST["age"]);
+}
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
 <h2>
     SPECS, MUGS & SAUSAGES
 </h2>
@@ -13,9 +29,27 @@
     Name: <input type = "text" name = "name">
     Age: <input type = "number" age = "age">
     <input type = "submit" name = "submit" value=" Submit">
-
 </form>
+<?php
+if (Age >= 21){
+    print "You can buy specs, mugs & sausages";
+}
+elseif(Age >= 18) {
+    print "You can buy specs & mugs";
+}
+elseif (Age >= 16) {
+    print "You can buy only specs";
+    }
+elseif (Age < 16){
+    print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
+}
 
+echo "<h2>Your Input: </h2>";
+echo $name;
+echo "<br>";
+echo $age;
+
+?>
 
 </body>
 </html>
