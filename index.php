@@ -45,6 +45,8 @@ echo "<h2>Your Input: </h2>";
 echo $name;
 echo "<br>";
 echo $age;
+echo "<br>";
+
 if ($age >= 21){
     print "You can buy specs, mugs & sausages";
 }
