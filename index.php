@@ -7,9 +7,7 @@
 <body>
 <?php
 // define variables and set to empty values
-$name = $age = "";
-$name = $_POST['name'];
-$age = $_POST['age'];
+
 
 /*
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,33 +26,14 @@ function test_input($data) {
 <h2>
     SPECS, MUGS & SAUSAGES
 </h2>
-<form method ="post" action="index.php">
+<form method ="post" action="process.php">
     Name: <input type = "text" name = "name">
     Age: <input type = "number" name = "age">
     <input type = "submit" name = "submit" value=" Submit">
 </form>
 
 
-<?php
-if ($age >= 21){
-    print "You can buy specs, mugs & sausages";
-}
-elseif($age >= 18) {
-    print "You can buy specs & mugs";
-}
-elseif ($age >= 16) {
-    print "You can buy only specs";
-    }
-elseif ($age > 0 && $age < 16 ){
-    print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
-}
 
-echo "<h2>Your Input: </h2>";
-echo $name;
-echo "<br>";
-echo $age;
-
-?>
 
 </body>
 </html>
