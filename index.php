@@ -28,9 +28,9 @@ function test_input($data) {
 <h2>
     SPECS, MUGS & SAUSAGES
 </h2>
-<form method = "post" action="index.php">
+<form method ="post" action="index.php">
     Name: <input type = "text" name = "name">
-    Age: <input type = "number" age = "age">
+    Age: <input type = "number" name = "age">
     <input type = "submit" name = "submit" value=" Submit">
 </form>
 
