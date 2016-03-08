@@ -1,4 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP</title>
+</head>
+<body>
+<p>
+    <?php
 /**
  * Created by PhpStorm.
  * User: 1419172
@@ -9,4 +17,8 @@ $name = "Harry Asin";
 $age = 30;
 echo "My name is " . $name. " and I am " . $age;
 
-?>
+    ?>
+</p>
+</body>
+</html>
+    
