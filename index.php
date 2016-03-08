@@ -35,7 +35,7 @@ function test_input($data) {
 <?php
 
 //$name = $age = "";
-/*$name = $_POST['name'];
+$name = $_POST['name'];
 $age = $_POST['age'];
 
 
@@ -59,7 +59,7 @@ elseif ($age >= 16 && $age < 18) {
 elseif ($age <= 0 && $age < 16 ){
     print "COME BACK WHEN YOU ARE 16 OR OVER!!!!!";
 }
-*/
+
 ?>
 
 
